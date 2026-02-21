@@ -49,3 +49,10 @@ No external APIs required.
 ---
 
 ## 📂 Project Structure
+the-bali-umar-website/
+│
+├── index.html
+├── style.css
+└── images/
+└── hero.jpg
+
