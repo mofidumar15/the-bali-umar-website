@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Bali-Umar | Premium Food Experience</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">The Bali-Umar</div>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#menu">Menu</a>
+        <a href="#contact">Contact</a>
+        <button onclick="orderNow('Hello The Bali-Umar, I want to place an order')" class="btn">
+            Order Now
+        </button>
+    </nav>
+</header>
+
+<!-- HERO SECTION -->
+<section class="hero">
+    <div class="hero-content">
+        <h1>Delicious Food <br> For Every Mood</h1>
+        <p>Serving irresistible comfort food </p>
+        <button onclick="orderNow('Hello The Bali-Umar, I want to place an order')" class="btn">
+            Order Now
+        </button>
+    </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="section">
+    <h2>About Us</h2>
+    <p>
+        We have been serving irresistible comfort food .
+        Our mission is to keep you smiling with every bite.
+        Word of mouth has been our only advertisement —
+        happy mouths are our best ambassadors!
+    </p>
+</section>
+
+<!-- MENU -->
+<section id="menu" class="section dark">
+    <h2>On The Menu</h2>
+
+    <div class="menu-grid">
+
+        <div class="card">
+            <h3>Veg Thali</h3>
+            <p>Packed with flavor and cooked to perfection.</p>
+            <button onclick="orderNow('I want to order Veg Thali')" class="btn-small">Order</button>
+        </div>
+
+        <div class="card">
+            <h3>Samosa</h3>
+            <p>Crispy and served with dipping sauces.</p>
+            <button onclick="orderNow('I want to order Samosa')" class="btn-small">Order</button>
+        </div>
+
+        <div class="card">
+            <h3>Pizza Bestsellers</h3>
+            <p>Big flavor with perfect cheesy stretch.</p>
+            <button onclick="orderNow('I want to order Pizza')" class="btn-small">Order</button>
+        </div>
+
+        <div class="card">
+            <h3>Pasta Classics</h3>
+            <p>Bold flavors meet al dente perfection.</p>
+            <button onclick="orderNow('I want to order Pasta')" class="btn-small">Order</button>
+        </div>
+
+        <div class="card">
+            <h3>Coffee</h3>
+            <p>Classic blends & unique additives.</p>
+            <button onclick="orderNow('I want to order Coffee')" class="btn-small">Order</button>
+        </div>
+
+        <div class="card">
+            <h3>Desserts</h3>
+            <p>Old-school treats & new flavors.</p>
+            <button onclick="orderNow('I want to order Dessert')" class="btn-small">Order</button>
+        </div>
+
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section">
+    <h2>Swing By Soon!</h2>
+    <p>Mandi Chowraha, Ashoka Garden, Bhopal 462010</p>
+    <p>Email: mu15082004@gmail.com</p>
+    <p>Phone: +91 9667105772</p>
+</section>
+
+<footer>
+    <p>© 2026 The Bali-Umar | All Rights Reserved</p>
+</footer>
+
+<!-- FLOATING WHATSAPP -->
+<div class="whatsapp-float" onclick="orderNow('Hello, I want to place an order')">
+    💬
+</div>
+
+<script>
+function orderNow(message) {
+    var phone = "919667105772";
+    var text = encodeURIComponent(message);
+    var isMobile = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+
+    if (isMobile) {
+        window.open("https://wa.me/" + phone + "?text=" + text, "_blank");
+    } else {
+        window.open("https://web.whatsapp.com/send?phone=" + phone + "&text=" + text, "_blank");
+    }
+}
+</script>
+
+</body>
+</html>
